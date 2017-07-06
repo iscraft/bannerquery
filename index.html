@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>bannerQuery</title>
+<style>
+.banner{position: relative; height: 570px; overflow: hidden; }
+.bwrap{position: relative; z-index: 0; }
+.bquery{position: relative; z-index: 0; height: 570px; }
+.blist{display: none; position: absolute; top: 0; left: 0; z-index: 0; height: 570px; font-size: 0; line-height: 0; }
+.blist a{display: block; position: absolute; left: 0; top: 0; }
+.blist img{ }
+.bfilter{position: absolute; top: 0; left: 0; z-index: 9; width: 100%; height: 570px; font-size: 0; line-height: 0; }
+.bfilter a{position: absolute; top: 0; left: 0; width: 5%; height: 570px; overflow: hidden; }
+.bfilter a img{position: absolute; left: 0; top: 0; }
+.bctrl{position: absolute; bottom: 24px; left: 0; z-index: 9; width: 100%; height: 24px; }
+.bctrli{text-align: center; font-size: 0; line-height: 0; }
+.bctrli a{display: inline-block; width: 24px; height: 24px; margin: 0 3px; background: url(banner_control.png) no-repeat left center; }
+.bctrli a:hover,
+.bctrli a.curr{background-position: right center; }
+.bctrli a{*display: inline; *zoom: 1; }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.8/TweenMax.min.js"></script>
+<script src="bannerquery.js"></script>
+</head>
+<body>
+<div class="banner">
+	<div id="bannerQuery" class="bwrap">
+		<ul class="bquery">
+			<li class="blist"><a href="/service/" target="_blank"><img src="http://www.qinfeng.net.cn/templets/lanse/images/2014714211449.jpg" title="banner01" alt="高端品牌网站建设" height='672'/></a></li>
+			<li class="blist"><a href="/service/" target="_blank"><img src="http://www.qinfeng.net.cn/templets/lanse/images/2014714212573.jpg" title="banner02" alt="超越客户希望的服务" height='672'/></a></li>
+			<li class="blist"><a href="/service/" target="_blank"><img src="http://www.qinfeng.net.cn/templets/lanse/images/2014714212826.jpg" title="banner03" alt="客户满意度是我们永恒的追求！" height='672'/></a></li>
+			<li class="blist"><a href="/service/" target="_blank"><img src="http://www.qinfeng.net.cn/templets/lanse/images/2014714212359.jpg" title="banner04" alt="移动APP开发" height='672' /></a></li>
+		</ul>
+	</div>
+	<div class="bctrl"><div id="bannerCtrl" class="bctrli"></div></div>
+</div>
+</body>
+</html>
